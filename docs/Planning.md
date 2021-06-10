@@ -3,6 +3,7 @@
 ## Steps
 
 | Goal | ETA (in weeks) | Status |
+|---|---|---|
 | Project setup | 1 | - |
 | Second screen appearance | 3 | - |
 | Screen 1 | 4 | - |

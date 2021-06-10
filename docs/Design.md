@@ -1,6 +1,8 @@
-Toma de requisitos: Parchivial Triviachi
+# Parchivial Triviachi
 
-Descripción:
+## Toma de requisitos: 
+
+### Descripción:
 - Juego de tablero fusión de Parchis y trivial
 - Mínimo 2 jugadores. Máximo 4.
 
@@ -12,7 +14,7 @@ Al caer en una casilla, el jugador deberá responder una pregunta de un tipo aso
 Si un jugador puede comer a otro, se inicia un reto, en el que ambos deberán contestar dos tarjetas distintas de 6 preguntas.
 El que más acierte gana y avanza esa ficha en 6 casillas. El perdedor retrocede 12.
 
-Pantallas:
+### Pantallas:
 Pantalla cero:
     - Introducción al juego.
     - Reglas
@@ -28,7 +30,7 @@ Tercera pantalla:
 Cuarta pantalla:
     - Modales de celebrar ganador
 
-Componentes:
+### Componentes:
     * Creación de partida: Formulario dínamico.
     * Dados: componente de una librería importada
     * Tablero: DIV que contiene:
