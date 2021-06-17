@@ -1,6 +1,8 @@
 import React from 'react';
+import { homeBoxStyle } from './styles/homeBoxStyles'
 
 type MiddleBoxProps = {
+    size : number
 }
 
 type MiddleBoxState = {
@@ -14,6 +16,8 @@ export class MiddleBox extends React.Component<MiddleBoxProps, MiddleBoxState>{
     }
 
     render(): JSX.Element{
-        return <></>
+        return <div style={{...homeBoxStyle, width: this.props.size, height: this.props.size}}>
+            Middle Box
+            </div>
     }
 }
