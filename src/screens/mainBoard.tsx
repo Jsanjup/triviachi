@@ -21,17 +21,17 @@ export class MainBoard extends React.Component<BoardProps, BoardState>{
         return <div style={mainBoardStyle}>
             <div>
             <HomeBox color="red" chips={0} size={boxSize}></HomeBox>
-            <SquareBox size={boxSize}></SquareBox>
+            <SquareBox rotation={90} size={boxSize}></SquareBox>
             <HomeBox color="blue" chips={0} size={boxSize}></HomeBox>
             </div>
             <div>
-            <SquareBox size={boxSize}></SquareBox>
+            <SquareBox rotation={180} size={boxSize}></SquareBox>
             <MiddleBox size={boxSize}></MiddleBox>
-            <SquareBox size={boxSize}></SquareBox>
+            <SquareBox rotation={0} size={boxSize}></SquareBox>
             </div>
             <div>
             <HomeBox color="green" chips={0} size={boxSize}></HomeBox>
-            <SquareBox size={boxSize}></SquareBox>
+            <SquareBox rotation={270} size={boxSize}></SquareBox>
             <HomeBox color="yellow" chips={0} size={boxSize}></HomeBox>
             </div>
         </div>

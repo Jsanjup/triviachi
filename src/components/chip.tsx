@@ -3,7 +3,6 @@ import { playerColor } from '../types/types';
 
 type ChipProps = {
     color : playerColor,
-    chips : number,
 }
 
 type ChipState = {

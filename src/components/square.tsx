@@ -1,9 +1,11 @@
 import React from 'react';
-import { playerColor } from '../types/types';
+import { playerColor, subject, squareType } from '../types/types';
 
 type SquareProps = {
-    color : playerColor,
-    chips : number,
+    squareType : squareType,
+    color ?: playerColor,
+    subject ?: subject,
+    index ?:string,
 }
 
 type SquareState = {
@@ -17,6 +19,6 @@ export class Square extends React.Component<SquareProps, SquareState>{
     }
 
     render(): JSX.Element{
-        return <></>
+        return <>{this.props.index}</>
     }
 }

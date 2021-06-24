@@ -1,6 +1,7 @@
 import React from 'react';
 import { playerColor } from '../types/types';
-import {homeBoxStyle} from './styles/homeBoxStyles';
+import {homeBoxStyle, basesRowStyle} from './styles/homeBoxStyles';
+import {BaseChip} from './baseChip';
 
 type HomeBoxProps = {
     color : playerColor,
@@ -19,8 +20,19 @@ export class HomeBox extends React.Component<HomeBoxProps, HomeBoxState>{
     }
 
     render(): JSX.Element{
-        return <div style={{...homeBoxStyle, width: this.props.size, height:this.props.size }}> 
-        Home Box 
+        return <div style={{...homeBoxStyle, width: this.props.size, height:this.props.size, backgroundColor: this.props.color }}> 
+            <div style={basesRowStyle}>
+                <BaseChip size={48}>
+                </BaseChip>
+                <BaseChip size={48}>
+                </BaseChip>
+            </div>
+            <div style={basesRowStyle}>
+                <BaseChip size={48}>
+                </BaseChip>
+                <BaseChip size={48}>
+                </BaseChip>
+            </div>
         </div>
     }
 }
