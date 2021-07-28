@@ -1,11 +1,13 @@
 import React from 'react';
 import { playerColor, subject, squareType } from '../types/types';
+import {squareStyle} from './styles/squareStyles'
 
 type SquareProps = {
     squareType : squareType,
     color ?: playerColor,
     subject ?: subject,
-    index ?:string,
+    index ?:number,
+    size: number
 }
 
 type SquareState = {
@@ -19,6 +21,7 @@ export class Square extends React.Component<SquareProps, SquareState>{
     }
 
     render(): JSX.Element{
-        return <>{this.props.index}</>
+        return <div style={{...squareStyle, height: this.props.size, width: 2*this.props.size, backgroundColor: this.props.color}}>{this.props.index}
+        {this.props.children}</div>
     }
 }

@@ -17,6 +17,7 @@ export class BaseChip extends React.Component<BaseChipProps, BaseChipState>{
 
     render(): JSX.Element{
         return <div style={{...baseChipStyle, width: this.props.size, height: this.props.size}}>
+            {this.props.children}
         </div>
     }
 }
